@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    
+    <style>
+
+        p{
+
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2em;
+            color: black;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover>p{
+            display: block;
+            color: white;
+            background-color: black;
+            width: 300px;
+        }
+
+        div:hover{
+            color: blue
+        }
+
+        div>div{
+            display: none;
+        }
+
+        div:hover>div{
+            
+            border: 5px solid black;
+            background-color: red;
+            width: 1000px ;
+            display: block;
+           
+
+            
+           
+
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>
+
+        passe o mouse aqui
+        <p>texto escondido</p>
+        <div>
+
+            <div><a href="https://www.google.com/search?q=harry+potter&tbm=isch&ved=2ahUKEwiU48mG9ab6AhVPOLkGHSKhASEQ2-cCegQIABAA&oq=harry&gs_lcp=CgNpbWcQARgAMgQIIxAnMgQIIxAnMgcIABCxAxBDMggIABCABBCxAzIHCAAQsQMQQzIHCAAQsQMQQzIECAAQQzIECAAQQzIECAAQQzIICAAQgAQQsQM6BQgAEIAEOgcIIxDqAhAnUJYCWI0aYLAvaANwAHgAgAGtAYgBowiSAQMxLjiYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=j40rY9TfPM_w5OUPosKGiAI&bih=759&biw=727&client=opera&hs=TOr#imgrc=xbswr4RE9XOFIM" target="_blank"><img src="img/Harry_Potter_wordmark.svg.png" alt="imag"></a></div>
+    
+    
+        </div>
+
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gruping tags</title>
+    <style>
+        *{
+            color:rgb(50, 48, 48)
+        }
+        body{background-color: rgb(219, 219, 219);}
+        header{
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        h1{ font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left: 30px;
+            text-shadow: 2px 1px 3px black;
+        }
+
+        a{  
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-between;
+            flex-direction: row;
+            margin-right: 8px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            text-decoration:none;
+            color:rgb(255, 255, 255);
+            border: 1px solid black;
+            border-radius: 8px;
+            box-shadow: 3px 1px 8px rgba(0, 0, 0, 0.423);
+        }
+        main{
+            border: 1px solid black;
+            margin-top: 15px;
+            border-radius: 5px 10px;
+
+        }
+            
+
+
+
+        
+        .navegacao{
+            display: flex;
+            justify-content: space-around;
+            
+
+            margin-right: 30px;
+        }
+        a:hover{
+            color: gray;
+            font-size: 18px;
+            font-weight: 500;
+        }
+            
+
+        footer{
+            text-align: center;
+        }
+
+        
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav class='navegacao'>
+            <a href="a">link</a>
+            <a href="a">link</a>
+            <a href="a">link</a>
+            <a href="a">link</a>
+            <a href="a">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <aside>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis incidunt minima fugiat, sint commodi eligendi in corporis provident maxime eius, deleniti qui pariatur ipsum nemo tenetur ad accusamus alias.</p>
+                </aside>
+
+            </article>
+            <article>
+                <aside>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem expedita quas sequi! Aliquid ipsa eum vel qui molestias, debitis atque. Quis ea alias eaque eligendi illum officia possimus neque nobis.</p>
+                </aside>
+
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+
+            
+            </article>
+            <article>
+
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido pelo marcos</p>
+    </footer>
+    
+</body>
+</html>

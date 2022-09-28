@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   
+
+
+   
+</head>
+
+<body>
+    <div>
+        <form method="post" action="index.php" id="form">
+            Valor 1: <input type="number" name="num1" id="v1"><br><br>
+            Valor 2: <input type="number" name="num2" id="v2"><br><br>
+            <select name="cal" id="campo">
+                <option value="add">Somar</option>
+                <option value="sub">Subtrair</option>
+                <option value="mult">Multiplicar</option>
+                <option value="div">Dividir</option>
+            </select>
+            <button type="button" value="submit"     onclick="mostraResultado()">Calcular</button> 
+        </form>  
+        <script>
+
+
+        function mostraResultado(){
+            var form = document.getElementById("form");
+            var valor1 = document.getElementById("v1");
+            var valor2 = document.getElementById("v2");
+            var opcao = document.getElementById("campo");
+
+
+
+            switch(opcao){
+                case "add":
+                    var resultado = valor1.value + valor2.value;
+                    document.write("O resultado é " + resultado.value);
+                    break;
+                case "sub":
+                    var resultado = valor1.value - valor2.value;
+                    document.write("O resultado é " + resultado.value);
+                    break;
+                case "mult":
+                    var resultado = valor1.value * valor2.value;
+                    document.write("O resultado é " + resultado.value);
+                    break;
+                case "div":
+                    var resultado = valor1.value / valor2.value;
+                    document.write("O resultado é " + resultado.value);
+                    break;
+            }
+        };
+
+        
+
+        
+        
+        </script>
+    </div>
+ 
+
+     
+    
+    
+   
+
+</body>
+
+
+</html>

@@ -1,0 +1,54 @@
+#charset "UTF-8";
+/*
+id em css é velha
+class em css é ponto
+
+
+*/
+body{ 
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 213, 0);
+
+}
+
+h1{
+    
+    color: rgb(79, 86, 153);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+#principal{
+    text-align: center;
+    background-color: black;
+    color: white;
+
+}
+
+h2{
+    color: rgb(95, 148, 38);
+
+
+}
+
+.basico{
+    color: red;
+    font-weight: bold;
+
+
+}
+.intermediario{
+    color: green;
+    font-weight: bold;
+
+
+}
+
+.avançado{
+    color:rgb(225, 0, 255);
+     font-weight:bold;
+}
+
+.destaque{background-color: rgba(141, 141, 31, 0.464);}
